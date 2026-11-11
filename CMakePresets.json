@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "vs2019-x64",
+      "displayName": "VS2019 x64",
+      "generator": "Visual Studio 16 2019",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/Build"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "displayName": "Release",
+      "configurePreset": "vs2019-x64",
+      "configuration": "Release"
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "configurePreset": "vs2019-x64",
+      "configuration": "Debug"
+    }
+  ]
+}
